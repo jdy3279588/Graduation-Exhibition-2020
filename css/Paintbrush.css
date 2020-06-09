@@ -1,0 +1,45 @@
+canvas {
+    cursor:crosshair;
+    margin: -30px 0px 0px 52.5px;
+    padding: 0;
+}
+#draw_btn {
+    float : right;
+    margin-top: -30px;
+    padding : 0px 50px 0px 0px;
+}
+#draw_btn button {
+    border: 1px solid skyblue;
+    background-color: rgba(0,0,0,0);
+    color: skyblue;
+    padding: 5px;
+}
+#draw_btn button:hover {
+    color:white;
+    background-color: skyblue;
+}
+#draw_btn1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right:-4px;
+}
+#draw_btn2 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right:-4px;
+}
+#draw_btn3 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right:-4px;
+}
+#draw_btn4 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right:-4px;
+}
+#draw_btn5 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right:-4px;
+}
