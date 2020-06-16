@@ -1,0 +1,209 @@
+#wrap {
+    width : 100%;
+    height : 100%;
+    background : black;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width : 100%;
+    height : 80px;
+}
+.section {
+    width : 100%;
+    height : 750px;
+}
+.footer {
+    width : 100%;
+    height : 80px;
+}
+#menubar1 ul {
+    float : left;
+    margin : 0;
+    padding : 0;
+}
+#menubar1 ul li {
+    display : inline-block;
+    list-style-type : none;
+    font-family: Helvetica;
+    padding : 40px 0px 0px 75px;
+}
+#menubar1 ul li span {
+    font-weight: bold;
+}
+#menubar1 ul li a {
+    color : white;
+    text-decoration : none;
+}
+#menubar1 ul li a:hover {
+    color : #F8B03A;
+}
+#menubar2 {
+    width: 317.5px;
+    display: table;
+    margin: 30px auto 0px;
+    float : right;
+    padding : 50px 45px 0px 0px;
+    transform: translateY(-50%);
+}
+
+#menubar2 a {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #949494;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+#menubar2 a:before, #menubar2 a:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+#menubar2 a:before {
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+#menubar2 a:after {
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+
+#menubar2 a:nth-child(1):before {
+    background-color: yellow;
+}
+
+#menubar2 a:nth-child(1):after {
+    background-color: red;
+}
+
+#menubar2 a:nth-child(2):before {
+    background-color: #00e2ff;
+}
+
+#menubar2 a:nth-child(2):after {
+    background-color: #89ff00;
+}
+
+#menubar2 a:nth-child(3):before {
+    background-color: purple;
+}
+
+#menubar2 a:nth-child(3):after {
+    background-color: palevioletred;
+}
+
+#indicator {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+#menubar2 a:hover {
+    color: #fff;
+}
+
+#menubar2 a:hover:before, #menubar2 a:hover:after {
+    transform: scale(1);
+}
+
+#menubar2 a:nth-child(1):hover ~ #indicator {
+    background: linear-gradient(130deg, yellow, red);
+}
+
+#menubar2 a:nth-child(2):hover ~ #indicator {
+    left: 31%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+#menubar2 a:nth-child(3):hover ~ #indicator {
+    left: 58.5%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+#menubar3 ul {
+    float : right;
+    margin : 0;
+    padding : 0;
+}
+#menubar3 ul li {
+    display : inline-block;
+    list-style-type : none;
+    font-family: Helvetica;
+    padding : 0px 75px 0px 0px;
+    color : gray;
+    font-size: 0.8em;
+    text-align: right;
+}
+#menubar3 ul li span {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 3em;
+    color : white;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+html {
+  width: 100%;
+  height: 100%;
+}
+*{
+    outline: none;
+}
+body {
+  background: -webkit-linear-gradient(#ebece7, white);
+  background: linear-gradient(#ebece7, white);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+    max-wisth: 100%;
+}
+.title {
+  color:#333;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+  color: transparent;
+  font-size: 200px;
+  background: url("https://download.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1") repeat;
+  background-position: 30% 10%;
+    background-size: 200%;
+  -webkit-background-clip: text;
+  position: relative;
+  text-align: center;
+  line-height: 250px;
+    text-transform: uppercase;
+}
+ a,.subtitle {
+  display: block;
+  text-align: center;
+text-decoration: initial;
+  text-transform: uppercase;
+  padding-top: 10px;
+  color:#E93074;
+}
