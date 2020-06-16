@@ -3,8 +3,24 @@
     <head>
         <title> Graduation Exhibition </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
         <script src="js/jquery-1.12.0.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          var mouseX, mouseY;
+          var ww = $( window ).width();
+          var wh = $( window ).height();
+          var traX, traY;
+          $(document).mousemove(function(e){
+             mouseX = e.pageX;
+             mouseY = e.pageY;
+            traX = ((4 * mouseX) / 350) + 10;
+            traY = ((4 * mouseY) / 350) + 20;
+            $(".title ").css({"background-position": traX + "%" + traY + "%"});
+            $(".title span").css({"background-position": traY + "%" + traX + "%"});
+          });
+          });
+        </script>
     </head>
     <body id="wrap">
       <header class="header">
@@ -14,13 +30,16 @@
        </ul>
       </nav>
       <nav id="menubar2">
-        <a href="Paintbrush.html">Paintbrush</a>
-        <a href="#">Subject</a>
+        <a href="Subject.html">Subject</a>
         <a href="#">Student</a>
+        <a href="Paintbrush.html">Paintbrush</a>
         <div id="indicator"></div>
       </nav>
     </header>
     <section class="section">
+      <div class="container">
+  <div class="title" contenteditable>Graffiti</div>
+  </div>
     </section>
     <footer class="footer">
       <nav id="menubar3">
