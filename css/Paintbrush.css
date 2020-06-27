@@ -11,35 +11,32 @@ canvas {
 #draw_btn button {
     border: 1px solid skyblue;
     background-color: rgba(0,0,0,0);
-    color: skyblue;
+    color: white;
     padding: 5px;
 }
 #draw_btn button:hover {
-    color:white;
     background-color: skyblue;
 }
 #draw_btn1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-right:-4px;
 }
 #draw_btn2 {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     margin-right:4px;
 }
 #draw_btn3 {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     margin-right:4px;
 }
 #draw_btn4 {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     margin-right:-4px;
 }
 #draw_btn5 {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin-right:-4px;
 }

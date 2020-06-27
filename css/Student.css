@@ -27,43 +27,31 @@ section {
 }
 .subimgform{
   clear: both;
-  width: 1850px;
-  height: 750px;
+  width: 1165px;
+  height: 650px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 105px;
+  padding-top: 110px;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 .subimgform img{
-  width: 380px;
-  height: 500px;
-  margin-top: 60px;
+  width: 177px;
+  height: 255.5px;
+  margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
 }
-.subimgform p{
-  color: white;
-}
-hr {
-  border: solid 1px white;
-  width: 240px;
-  margin-top: 20px;
-}
-.tittle{
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 8px;
-  margin-bottom: 0px;
-}
-.name{
-  font-size: 12px;
-  opacity: 40%;
-  margin-top: 2px;
-  }
-.imgbox{
+.imgbox {
   display: inline-block;
   padding: 0px 5px 0px 5px;
+}
+.imgbox p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 650;
+  font-size: 14px;
+  margin: 20px 0px 10px 20px;
+  color: white;
 }
 .mouse {
 	max-width: $mouse-width;
@@ -101,24 +89,4 @@ hr {
 		transform: translateY(36px) scaleY(2);
 		opacity: 0;
 	}
-}
-.zoom {
-    overflow: hidden;
-    border: 1px solid #e5e5e5;
-    box-shadow: 0px 0px 10px 0px #e5e5e5;
-    box-sizing: border-box;
-    border-radius: 10px;
-    transition: transform .3s;
-    width: 25%;
-    height: 200px;
-    margin: 2%;
-    display:inline-block; /* 가로로 배치 */
-}
-.zoom:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.zoom img {
-    width: 100%;
 }

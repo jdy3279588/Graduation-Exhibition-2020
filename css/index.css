@@ -26,11 +26,11 @@
     display : inline-block;
     list-style-type : none;
     font-family: Helvetica;
-    padding : 40px 0px 0px 75px;
+    padding : 50px 0px 0px 75px;
 }
 #menubar1 ul li span {
     text-align: left;
-    font-weight: bold;
+    font-weight: 900;
 }
 #menubar1 ul li a {
     color : white;
@@ -92,7 +92,7 @@
 }
 
 #menubar2 a:nth-child(2):before {
-    background-color: #00e2ff;
+    background-color: #3F8C83;
 }
 
 #menubar2 a:nth-child(2):after {
@@ -107,9 +107,16 @@
     background-color: palevioletred;
 }
 
+#menubar2 a:nth-child(4):before {
+    background-color: #445E96;
+}
+
+#menubar2 a:nth-child(4):after {
+    background-color: #448A96;
+}
 #indicator {
     position: absolute;
-    left: 5%;
+    left: 4%;
     bottom: 0;
     width: 30px;
     height: 3px;
@@ -131,13 +138,18 @@
 }
 
 #menubar2 a:nth-child(2):hover ~ #indicator {
-    left: 31%;
-    background: linear-gradient(130deg, #00e2ff, #89ff00);
+    left: 22.65%;
+    background: linear-gradient(130deg, #3F8C83, #89ff00);
 }
 
 #menubar2 a:nth-child(3):hover ~ #indicator {
-    left: 58.5%;
+    left: 44.6%;
     background: linear-gradient(130deg, purple, palevioletred);
+}
+
+#menubar2 a:nth-child(4):hover ~ #indicator {
+    left: 66.85%;
+    background: linear-gradient(130deg, #445E96, #448A96);
 }
 #menubar3 ul {
     float : right;
@@ -147,15 +159,15 @@
 #menubar3 ul li {
     display : inline-block;
     list-style-type : none;
-    font-family: Helvetica;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding : 0px 75px 0px 0px;
     color : gray;
     font-size: 0.8em;
     text-align: right;
 }
 #menubar3 ul li span {
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
     font-size: 3em;
     color : white;
 }
