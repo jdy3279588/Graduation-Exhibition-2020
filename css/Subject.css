@@ -67,7 +67,7 @@ hr {
 }
 .mouse {
 	max-width: $mouse-width;
-	width: 8%;
+	width: 25px;
 	height: auto;
 }
 .scroll {
@@ -82,7 +82,7 @@ hr {
 .scroll-link {
 	position: absolute;
 	bottom: 1rem;
-	left: 55.4%;
+	left: 50%;
   bottom: 45px;
 	transform: translateX(-50%);
 }
