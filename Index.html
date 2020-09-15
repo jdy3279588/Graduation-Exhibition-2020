@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> DCD Paintbrush </title>
+        <title> Graduation Exhibition </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/Index.css">
-        <link rel="stylesheet" href="css/Paintbrush.css">
         <script src="js/jquery-1.12.0.min.js"></script>
-        <script src="js/Paintbrush.js"></script>
+        <script>
+        $(document).ready(function(){
+          var mouseX, mouseY;
+          var ww = $( window ).width();
+          var wh = $( window ).height();
+          var traX, traY;
+          $(document).mousemove(function(e){
+             mouseX = e.pageX;
+             mouseY = e.pageY;
+            traX = ((4 * mouseX) / 350) + 10;
+            traY = ((4 * mouseY) / 350) + 20;
+            $(".title ").css({"background-position": traX + "%" + traY + "%"});
+          });
+          });
+        </script>
     </head>
-    <body onload="ready()" onresize="resize()" id="wrap">
+    <body id="wrap">
       <header class="header">
       <nav id="menubar1">
        <ul>
@@ -24,19 +37,9 @@
       </nav>
     </header>
     <section class="section">
-
-      <div id="draw_btn">
-        <button id="draw_btn1" onclick="news()">New</button>
-        |
-        <button id="draw_btn2" onclick="w15()"><img src="images/bold_01.png" alt=""></button>
-        <button id="draw_btn3" onclick="w5()"><img src="images/bold_02.png" alt=""></button>
-        <button id="draw_btn4" onclick="w1()"><img src="images/bold_03.png" alt=""></button>
-        |
-        <button id="draw_btn5" onclick="erase()">Erase</button>
-      </div>
-
-      <canvas id="canvas" width="100%" height="700px"></canvas>
-
+      <div class="container">
+  <div class="title" contenteditable>Graffiti</div>
+  </div>
     </section>
     <footer class="footer">
       <nav id="menubar3">
