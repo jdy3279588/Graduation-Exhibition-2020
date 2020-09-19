@@ -36,8 +36,9 @@ section {
   text-align: left;
 }
 .subimgform img {
-  width: 177px;
-  height: 255.5px;
+  border: 2px solid white;
+  width: 173px;
+  height: 251.5px;
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
@@ -47,6 +48,9 @@ section {
 .subimgform img:hover {
   -webkit-filter: grayscale(0%);
   filter: none;
+  width: 177px;
+  height: 255.5px;
+  border: 0px;
 }
 .imgbox {
   display: inline-block;
