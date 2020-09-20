@@ -10,7 +10,9 @@
 
 .section nav a {
   text-decoration: none;
-  font-size: 35px;
+  font-size: 36px;
+  font-family: Helvetica;
+  font-weight: bold;
   color: #ddd;
   position: relative;
   margin-bottom: 50px;
@@ -43,10 +45,10 @@
   content: "";
   position: absolute;
   top: 50%;
-  margin-top: 2px;
+  margin-top: -0.5px;
   left: 100%;
   width: 100%;
-  height: 2.5px;
+  height: 4px;
   background: #eb2141;
   transition: all .4s;
   transition-delay: .6s;
