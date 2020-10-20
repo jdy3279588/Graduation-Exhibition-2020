@@ -53,7 +53,7 @@
     width: 33.333%;
     display: table-cell;
     text-align: center;
-    color: #949494;
+    color: white;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -126,7 +126,7 @@
 }
 
 #menubar2 a:hover {
-    color: #fff;
+    color: #cd4746;
 }
 
 #menubar2 a:hover:before, #menubar2 a:hover:after {
@@ -134,6 +134,7 @@
 }
 
 #menubar2 a:nth-child(1):hover ~ #indicator {
+    left: 4%;
     background: linear-gradient(130deg, yellow, red);
 }
 
